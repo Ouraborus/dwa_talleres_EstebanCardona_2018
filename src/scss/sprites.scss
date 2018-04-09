@@ -1,0 +1,5 @@
+@import 'compass/utilities/sprites';
+$sprite_1_layout: smart;
+$sprite_1_sprite-dimensions: true;
+@import 'pokemons/*.png';
+@include all-pokemons-sprites;
