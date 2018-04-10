@@ -10,9 +10,9 @@
       "assets": [
         "assets",
         {
-          "input": "./images",
+          "input": "./",
           "glob": "*.png",
-          "output": "./images"
+          "output": "./"
         },
         "favicon.ico"
       ],
