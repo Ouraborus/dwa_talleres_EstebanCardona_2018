@@ -1,0 +1,41 @@
+<section class="main">
+  <div class="main__container">
+      <p class="main__title">Snorlax</p>
+  </div>
+  <div class="main__pokemon"></div>
+  <div class="main__container main__container--attributes">
+      <ul class="main__list">
+          <li class="main__list--item">
+              <p>NO.</p>
+              <p>143</p>
+          </li>
+          <li class="main__list--item">
+              <p>LEVEL</p>
+              <p>1</p>
+          </li>
+          <li class="main__list--item">
+              <p>TYPE</p>
+              <p>Normal</p>
+          </li>
+          <li class="main__list--item">
+              <p>HABILITY</p>
+              <p>Thick Fat, Inmunity</p>
+          </li>
+          <li class="main__list--item">
+              <p>HEIGHT</p>
+              <p>6'11"</p>
+          </li>
+          <li class="main__list--item">
+              <p>WEIGHT</p>
+              <p>1014.1lbs</p>
+          </li>
+          <li class="main__list--item">
+            <div>
+              <button class="main__list--button" (click)="modifyRating(true)">+</button>
+              <button class="main__list--button" (click)="modifyRating(false)">-</button>
+            </div>
+              <p>{{rating}}pts</p>
+          </li>
+        </ul>
+  </div>
+</section>
