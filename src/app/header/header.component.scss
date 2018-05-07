@@ -1,6 +1,4 @@
 @import '~scss/_variables.scss';
-@import '../../assets/sprites.css';
-
 .header{
   display: flex;
   align-items: center;
@@ -17,8 +15,9 @@
       font-family: 'Aldrich', sans-serif;
   }
   &__icon{
-      // @extend .pokemons-145;
+      @extend .pokemons-145;
       width: 64px;
       height: 64px;
   }
 }
+
