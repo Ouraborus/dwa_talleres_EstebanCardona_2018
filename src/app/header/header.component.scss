@@ -24,5 +24,11 @@
       width: 64px;
       height: 64px;
   }
+  &__button{
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+  }
 }
 
