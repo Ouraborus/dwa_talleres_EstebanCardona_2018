@@ -4,11 +4,15 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
+    "compass": "compass compile './src/scss/sprites-generator.scss'",
+    "rename": "rname ./src/scss/sprites-generator.css _sprites.scss",
+    "modify": "node ./sprite-config.js",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build": "ng build --prod",
+    "start": "ng serve",
+    "first": "npm-run-all --serial compass rename modify start"
   },
   "private": true,
   "dependencies": {
@@ -40,7 +44,10 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "npm-run-all": "^4.1.2",
     "protractor": "~5.1.2",
+    "rename-cli": "^5.0.0",
+    "replace-in-file": "^3.4.0",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
