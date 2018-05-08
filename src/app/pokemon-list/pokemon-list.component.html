@@ -1,16 +1,7 @@
 <div class="pokemon-list">
   <ul class="pokemon-list__container">
-      <li class="pokemon-list__tile">
-          <div class="pokemon-list__pokemon pokemon-list__pokemon--1"></div>
-      </li>
-      <li class="pokemon-list__tile">
-          <div class="pokemon-list__pokemon pokemon-list__pokemon--2"></div>
-      </li>
-      <li class="pokemon-list__tile">
-          <div class="pokemon-list__pokemon pokemon-list__pokemon--3"></div>
-      </li>
-      <li class="pokemon-list__tile">
-          <div class="pokemon-list__pokemon pokemon-list__pokemon--4"></div>
-      </li>
+    <li *ngFor="let pokemon of pokemons; let i = index" class="pokemon-list__tile">
+      <button class="pokemon__tile" (click)="goToDetails(pokemon['id'])" [ngStyle]="{'background-image': getURL(i), 'height': '150px', 'width': '100%', 'background-repeat': 'no-repeat','background-position': 'center','transition': 'all 300ms linear', 'background-color': 'transparent', 'border': 'none'}" ></button>
+    </li>
   </ul>
 </div>

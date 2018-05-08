@@ -1,2 +1,47 @@
 <app-header></app-header>
-<app-body></app-body>
+<section class="main">
+    <div class="main__column">
+      <div class="main__container">
+        <p class="main__title">{{selectedPokemon.name}}</p>
+      </div>
+      <div [ngStyle]="{'background-image': getURL(), 'height': '100px', 'background-repeat': 'no-repeat','background-position-x': 'center', 'background-color': 'transparent'}" class="main__pokemon"></div>
+    </div>
+    <div class="main__column">
+      <div class="main__container main__container--attributes">
+        <ul class="main__list">
+          <li class="main__list--item">
+            <p>NO.</p>
+            <p>{{selectedPokemon.id}}</p>
+          </li>
+          <li class="main__list--item">
+            <p>LEVEL</p>
+            <p>{{selectedPokemon.level}}</p>
+          </li>
+          <li class="main__list--item">
+            <p>TYPE</p>
+            <p>{{selectedPokemon.type}}</p>
+          </li>
+          <li class="main__list--item">
+            <p>ABILITY</p>
+            <p>{{selectedPokemon.ability}}</p>
+          </li>
+          <li class="main__list--item">
+            <p>HEIGHT</p>
+            <p>{{selectedPokemon.height}}</p>
+          </li>
+          <li class="main__list--item">
+            <p>WEIGHT</p>
+            <p>{{selectedPokemon.weight}}</p>
+          </li>
+          <li class="main__list--item">
+            <div>
+              <button class="main__list--button" (click)="modifyRating(true)">+</button>
+              <button class="main__list--button" (click)="modifyRating(false)">-</button>
+            </div>
+            <p>{{rating}}pts</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+

@@ -22,23 +22,13 @@
     }
     &__tile {
         width: 100%;
+        height: 150px;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
     }
     &__title {
         position: absolute;
         margin: 2px;
-    }
-    &__pokemon {
-        width: 100%;
-        @for $i from 1 through 4 {
-            &--#{$i} {
-                @extend .pokemons-#{$i + 143};
-                background-position-x: center;
-                height: 100px;
-                transition: all 300ms linear;
-                &:hover {
-                    background-color: rgba(0, 0, 0, 0.3);
-                }
-            }
-        }
     }
 }
