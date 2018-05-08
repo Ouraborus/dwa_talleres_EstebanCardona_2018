@@ -9,6 +9,7 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
+import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { DetailsComponent } from './details/details.component';
     BodyComponent,
     FooterComponent,
     HomeComponent,
-    DetailsComponent
+    DetailsComponent,
+    PokemonListComponent
   ],
   imports: [
     BrowserModule,
